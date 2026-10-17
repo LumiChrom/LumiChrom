@@ -98,4 +98,4 @@ Valorile actuale sunt **ipotetice, nu măsurate**. După experiment:
 ## Tehnologii
 
 HTML5, CSS3 și JavaScript simplu, fără framework sau dependențe de build.
-Fontul Poppins este încărcat din Google Fonts, cu fonturi de rezervă locale.
+Fontul Poppins este încărcat din Google Fonts, cu fonturi de rezervă locale. ij
