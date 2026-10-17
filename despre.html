@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Despre proiect · LumiChrom</title>
+  <meta name="description" content="Povestea proiectului LumiChrom: observația de la care am pornit, întrebarea de cercetare, ipotezele și echipa.">
+  <meta name="theme-color" content="#fbf7f1">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      document.documentElement.classList.add("js");
+      try {
+        var saved = localStorage.getItem("lumichrom-theme");
+        document.documentElement.dataset.theme = saved === "dark" ? "dark" : "light";
+      } catch (error) {
+        document.documentElement.dataset.theme = "light";
+      }
+    })();
+  </script>
+</head>
+<body class="page-despre">
+  <a class="skip-link" href="#main">Sari la conținut</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="LumiChrom — pagina principală">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Lumi<span>Chrom</span></span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Meniu principal">
+        <a href="index.html">Acasă</a>
+        <a href="despre.html" class="is-active" aria-current="page">Despre</a>
+        <a href="teorie.html">Teorie</a>
+        <a href="experiment.html">Experiment</a>
+        <a href="demo.html">Demo</a>
+        <a href="rezultate.html">Rezultate</a>
+        <a href="concluzii.html">Concluzii</a>
+        <a href="intrebari.html">Întrebări</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button theme-toggle" type="button" aria-label="Comută la modul întunecat" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.6 14.2A8.6 8.6 0 0 1 9.8 3.4 8.6 8.6 0 1 0 20.6 14.2Z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </svg>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Deschide meniul" aria-controls="mainNav" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="site-main">
+    <section class="page-hero">
+      <span class="chapter-mark" aria-hidden="true">01</span>
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Firimituri">
+          <a href="index.html">Acasă</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Despre proiect</span>
+        </nav>
+        <div class="page-hero-inner">
+          <span class="eyebrow" data-reveal>Povestea proiectului</span>
+          <h1 data-reveal style="--delay: .05s">Totul a început cu o bancă neagră și una albă</h1>
+          <p class="page-hero-lead" data-reveal style="--delay: .1s">
+            Aceeași lumină, aceeași oră, același loc. Și totuși, una dintre bănci era mult mai caldă.
+            De aici a apărut întrebarea care a dus la LumiChrom.
+          </p>
+          <div class="page-hero-meta" data-reveal style="--delay: .15s">
+            <span class="chip"><span class="chip-dot"></span>1 observație</span>
+            <span class="chip"><span class="chip-dot"></span>1 întrebare</span>
+            <span class="chip"><span class="chip-dot"></span>3 ipoteze</span>
+            <span class="chip"><span class="chip-dot"></span>o echipă</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="observation-title">
+      <div class="container">
+        <div class="story-grid">
+          <article class="story-card surface-card" data-reveal>
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <span class="icon-badge icon-badge--warm" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </span>
+            <h2 id="observation-title" style="margin-top: 22px;">Observația</h2>
+            <p>
+              Într-o zi caldă, ne-am așezat pe două bănci din curte. Una era vopsită în negru, cealaltă în alb.
+              După câteva minute, banca neagră era vizibil mai caldă, deși amândouă stăteau în același soare.
+            </p>
+            <p>
+              Ne-am întrebat dacă diferența apare doar la soare sau și în clasă, sub becuri. Și dacă lumina are
+              altă nuanță — mai galbenă sau mai albastră — se schimbă ceva?
+            </p>
+          </article>
+
+          <div class="story-side" data-reveal style="--delay: .1s">
+            <article class="side-card side-card--warm">
+              <div class="side-card__head">
+                <span class="icon-badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18h6M10 22h4"/>
+                    <path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2Z"/>
+                  </svg>
+                </span>
+                <h3>De ce ne interesează?</h3>
+              </div>
+              <p>Culoarea nu schimbă doar felul în care arată un obiect. Poate schimba și cât de repede primește și păstrează căldura.</p>
+            </article>
+
+            <article class="side-card surface-card">
+              <div class="side-card__head">
+                <span class="icon-badge icon-badge--blue" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M9.8 9a2.4 2.4 0 0 1 4.6 1c0 1.6-2.4 2-2.4 3.5"/>
+                    <path d="M12 17h.01"/>
+                  </svg>
+                </span>
+                <h3>Ce ne propunem?</h3>
+              </div>
+              <p>Să măsurăm în aceleași condiții, să comparăm corect și să explicăm rezultatul pe înțelesul tuturor.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" aria-labelledby="question-title">
+      <div class="container">
+        <div class="research-question" data-reveal>
+          <span class="eyebrow">Întrebarea de cercetare</span>
+          <h2 id="question-title" class="sr-only">Întrebarea de cercetare</h2>
+          <blockquote>
+            „Cum influențează culoarea unei suprafețe temperatura ei după 30 de minute, când este luminată
+            cu lumină caldă (2700 K), normală (4000 K) sau rece (6500 K)?”
+          </blockquote>
+          <p class="question-note">
+            Pe scurt: se încălzește la fel o placă neagră și una albă? Și se schimbă rezultatul dacă schimbăm lumina?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="hypotheses-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-kicker">Ce credem înainte de măsurare</span>
+          <h2 id="hypotheses-title">Trei ipoteze de verificat</h2>
+          <p class="lead">O ipoteză este o presupunere logică, nu un răspuns sigur. Experimentul există tocmai pentru a o verifica.</p>
+        </div>
+
+        <div class="hypothesis-grid">
+          <article class="hypothesis-card" data-reveal style="--delay: .04s">
+            <span class="hypothesis-index" aria-hidden="true">H1</span>
+            <span class="icon-badge icon-badge--warm" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3a7 7 0 0 0-4.4 12.4c.7.6 1.4 1.4 1.4 2.4V19h6v-1.2c0-1 .7-1.8 1.4-2.4A7 7 0 0 0 12 3Z"/>
+                <path d="M9 22h6M9.5 12.5l1.7 1.7 3.5-3.7"/>
+              </svg>
+            </span>
+            <h3>Culorile închise se încălzesc mai mult</h3>
+            <p>Negru și albastru închis absorb mai multă lumină decât albul sau galbenul. Ne așteptăm ca diferența să fie clară.</p>
+            <span class="hypothesis-result">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6 9 17l-5-5"/>
+              </svg>
+              Credem că da
+            </span>
+          </article>
+
+          <article class="hypothesis-card" data-reveal style="--delay: .12s">
+            <span class="hypothesis-index" aria-hidden="true">H2</span>
+            <span class="icon-badge icon-badge--blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+              </svg>
+            </span>
+            <h3>Lumina caldă încălzește puțin mai tare</h3>
+            <p>Lumina caldă are o nuanță portocalie. Bănuim că plăcile primesc puțin mai multă energie, dar diferența va fi mică.</p>
+            <span class="hypothesis-result">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+              De verificat
+            </span>
+          </article>
+
+          <article class="hypothesis-card" data-reveal style="--delay: .2s">
+            <span class="hypothesis-index" aria-hidden="true">H3</span>
+            <span class="icon-badge icon-badge--green" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22a7 7 0 0 0 7-7c0-4-3-6-3-10-3 1-4 3-4 5 0 1.5-.6 2.3-1.5 3.3A6.8 6.8 0 0 0 8.5 18 5 5 0 0 0 12 22Z"/>
+              </svg>
+            </span>
+            <h3>Albul rămâne cel mai rece</h3>
+            <p>Suprafața albă reflectă cea mai mare parte a luminii. Dacă este așa, absoarbe puțină energie și se încălzește cel mai puțin.</p>
+            <span class="hypothesis-result">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6 9 17l-5-5"/>
+              </svg>
+              Credem că da
+            </span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" aria-labelledby="team-title">
+      <div class="container">
+        <div class="section-head section-head--center" data-reveal>
+          <span class="section-kicker">Oamenii din spatele proiectului</span>
+          <h2 id="team-title">Echipa LumiChrom</h2>
+          <p class="lead">Trei oameni, o întrebare și multe măsurători.</p>
+        </div>
+
+        <!-- Înlocuiește numele, clasa și profesorul cu datele echipei tale. -->
+        <div class="team-grid">
+          <article class="person-card" data-reveal style="--delay: .04s">
+            <div class="avatar" aria-hidden="true">AP</div>
+            <h3>Andrei Popescu</h3>
+            <p class="person-role">Elev · clasa a VIII-a A</p>
+            <p>Se ocupă de măsurători, termometre și de compararea rezultatelor.</p>
+            <span class="team-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 3v18h18"/>
+                <path d="m7 14 3-4 3 2 4-6"/>
+              </svg>
+              date și grafice
+            </span>
+          </article>
+
+          <article class="person-card" data-reveal style="--delay: .12s">
+            <div class="avatar" aria-hidden="true">MI</div>
+            <h3>Maria Ionescu</h3>
+            <p class="person-role">Elevă · clasa a VIII-a A</p>
+            <p>A adunat informațiile teoretice și a transformat rezultatele într-o poveste clară.</p>
+            <span class="team-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/>
+              </svg>
+              cercetare și prezentare
+            </span>
+          </article>
+
+          <article class="person-card" data-reveal style="--delay: .2s">
+            <div class="avatar" aria-hidden="true">ED</div>
+            <h3>Prof. Elena Dumitrescu</h3>
+            <p class="person-role">Profesor coordonator</p>
+            <p>Ne-a ghidat pașii, a verificat condițiile experimentului și ne-a ajutat să punem întrebările corecte.</p>
+            <span class="team-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m12 3 9 5-9 5-9-5 9-5Z"/>
+                <path d="M3 13.5 12 18l9-4.5"/>
+              </svg>
+              fizică
+            </span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-panel" data-reveal>
+          <div>
+            <span class="eyebrow">Următorul pas</span>
+            <h2>Cum ajunge lumina la căldură?</h2>
+            <p>Înainte de experiment, descoperă explicația simplă din spatele absorbției și al celor trei tipuri de lumină.</p>
+          </div>
+          <a class="btn btn--primary" href="teorie.html">
+            Mergi la teorie
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="LumiChrom — pagina principală">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">Lumi<span>Chrom</span></span>
+          </a>
+          <p>Un proiect școlar de fizică despre felul în care culoarea unei suprafețe și lumina din jur schimbă absorbția și încălzirea.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h3>Proiectul</h3>
+            <nav aria-label="Linkuri despre proiect">
+              <a href="despre.html">Despre proiect</a>
+              <a href="teorie.html">Teorie</a>
+              <a href="experiment.html">Experiment</a>
+            </nav>
+          </div>
+          <div class="footer-col">
+            <h3>Explorează</h3>
+            <nav aria-label="Linkuri către rezultate și întrebări">
+              <a href="demo.html">Demo interactiv</a>
+              <a href="rezultate.html">Rezultate</a>
+              <a href="concluzii.html">Concluzii</a>
+              <a href="intrebari.html">Întrebări frecvente</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> LumiChrom · Proiect școlar de fizică</span>
+        <span>Lumină, culoare și căldură</span>
+        <a href="#main">
+          Înapoi sus
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 19V5M6 11l6-6 6 6"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

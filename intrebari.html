@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Întrebări frecvente · LumiChrom</title>
+  <meta name="description" content="Răspunsuri simple la întrebările frecvente despre absorbția luminii, temperatura de culoare, experiment și datele LumiChrom.">
+  <meta name="theme-color" content="#fbf7f1">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      document.documentElement.classList.add("js");
+      try {
+        var saved = localStorage.getItem("lumichrom-theme");
+        document.documentElement.dataset.theme = saved === "dark" ? "dark" : "light";
+      } catch (error) {
+        document.documentElement.dataset.theme = "light";
+      }
+    })();
+  </script>
+</head>
+<body class="page-intrebari">
+  <a class="skip-link" href="#main">Sari la conținut</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="LumiChrom — pagina principală">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Lumi<span>Chrom</span></span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Meniu principal">
+        <a href="index.html">Acasă</a>
+        <a href="despre.html">Despre</a>
+        <a href="teorie.html">Teorie</a>
+        <a href="experiment.html">Experiment</a>
+        <a href="demo.html">Demo</a>
+        <a href="rezultate.html">Rezultate</a>
+        <a href="concluzii.html">Concluzii</a>
+        <a href="intrebari.html" class="is-active" aria-current="page">Întrebări</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button theme-toggle" type="button" aria-label="Comută la modul întunecat" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.6 14.2A8.6 8.6 0 0 1 9.8 3.4 8.6 8.6 0 1 0 20.6 14.2Z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </svg>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Deschide meniul" aria-controls="mainNav" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="site-main">
+    <section class="page-hero">
+      <span class="chapter-mark" aria-hidden="true">07</span>
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Firimituri">
+          <a href="index.html">Acasă</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Întrebări frecvente</span>
+        </nav>
+        <div class="page-hero-inner">
+          <span class="eyebrow" data-reveal>Răspunsuri pe scurt</span>
+          <h1 data-reveal style="--delay: .05s">Întrebări frecvente despre lumină, culoare și căldură</h1>
+          <p class="page-hero-lead" data-reveal style="--delay: .1s">
+            Am strâns aici întrebările care apar cel mai des. Fiecare răspuns este scris simplu,
+            fără termeni complicați.
+          </p>
+          <div class="page-hero-meta" data-reveal style="--delay: .15s">
+            <span class="chip"><span class="chip-dot"></span>8 întrebări</span>
+            <span class="chip"><span class="chip-dot"></span>răspunsuri scurte</span>
+            <span class="chip"><span class="chip-dot"></span>fără formule</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="faq-layout">
+          <aside class="faq-aside" data-reveal>
+            <span class="section-kicker">Baza teoriei</span>
+            <h2 id="faq-title">Dacă ai o singură întrebare, începe aici</h2>
+            <p>Am explicat pe rând absorbția, lumina caldă și rece, martorul și felul în care citim datele experimentului.</p>
+
+            <div class="faq-aside-card">
+              <strong>Rezultatele sunt ipotetice</strong>
+              <p>Da. Numerele sunt exemple, marcate clar pe pagina de rezultate. După experiment, ele se înlocuiesc într-un singur fișier.</p>
+            </div>
+          </aside>
+
+          <div class="faq-list" data-reveal style="--delay: .08s">
+            <details class="faq-item" name="faq">
+              <summary>
+                De ce se încălzește mai tare o suprafață neagră?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>O suprafață neagră absoarbe cea mai mare parte a luminii care ajunge pe ea. Energia absorbită se transformă în căldură, deci temperatura crește mai mult. O suprafață albă reflectă multă lumină și primește mai puțină energie.</p>
+              </div>
+            </details>
+
+            <details class="faq-item" name="faq">
+              <summary>
+                Ce înseamnă temperatura de culoare (K)?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>Temperatura de culoare descrie nuanța luminii și se măsoară în kelvin (K). Ea <strong>nu</strong> arată cât de caldă este lumina la atingere. 2700 K are o nuanță galben-portocalie, 4000 K este alb-neutru, iar 6500 K pare alb-albăstrui.</p>
+              </div>
+            </details>
+
+            <details class="faq-item" name="faq">
+              <summary>
+                De ce 2700 K se numește „caldă” dacă 6500 K are un număr mai mare?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>Numele vine din senzația pe care o dă lumina: focurile și becurile vechi, cu nuanță portocalie, au valori mici în kelvin și par „calde”. Lumina albastră a cerului are o valoare mare și pare „rece”. Numărul mai mare înseamnă o nuanță mai albastră, nu o temperatură fizică mai mare.</p>
+              </div>
+            </details>
+
+            <details class="faq-item" name="faq">
+              <summary>
+                Ce este variabila martor și de ce o folosim?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>Martorul este măsurătoarea de referință. În proiectul nostru, este <span class="faq-highlight">placa albă sub lumină normală</span>. Ea ne arată cât se încălzește o suprafață care reflectă foarte multă lumină, ca să putem compara celelalte plăci cu un punct stabil.</p>
+              </div>
+            </details>
+
+            <details class="faq-item" name="faq">
+              <summary>
+                De ce plăcile trebuie să aibă același material și aceeași dimensiune?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>Materialele diferite absorb și conduc căldura în moduri diferite. Dacă am folosi metal pentru o placă și plastic pentru alta, nu am mai ști dacă diferența de temperatură vine din culoare sau din material. Păstrând plăcile identice, schimbăm doar culoarea.</p>
+              </div>
+            </details>
+
+            <details class="faq-item" name="faq">
+              <summary>
+                Rezultatele afișate sunt reale?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>Nu. Toate valorile de pe site sunt <strong>ipotetice, nu măsurate</strong> și sunt marcate clar. Sunt exemple pentru a arăta cum va arăta proiectul după experiment. Datele reale se introduc în fișierul <code>assets/js/data.js</code>, iar tabelul și graficul se actualizează automat.</p>
+              </div>
+            </details>
+
+            <details class="faq-item" name="faq">
+              <summary>
+                De ce nu este suficientă o singură măsurătoare?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>O singură citire poate fi influențată de o greșeală mică: termometrul a stat altfel, a intrat un curent de aer sau cronometrul a fost pornit cu întârziere. Repetând de mai multe ori și făcând media, rezultatul devine mai stabil.</p>
+              </div>
+            </details>
+
+            <details class="faq-item" name="faq">
+              <summary>
+                Cum aș putea repeta experimentul acasă?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>Folosește șase plăci mici din același material, vopsite în cele șase culori, un bec de birou și un termometru. Păstrează aceeași distanță și aceeași durată pentru fiecare test. Cere ajutorul unui adult când lucrezi cu becuri și nu atinge becul cât este aprins.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--flush-top">
+      <div class="container">
+        <div class="cta-panel" data-reveal>
+          <div>
+            <span class="eyebrow">Vezi răspunsul în mișcare</span>
+            <h2>Încearcă simularea cu cele șase plăci</h2>
+            <p>Alege o lumină și urmărește termometrele. Este cel mai simplu mod de a înțelege ce se întâmplă în experiment.</p>
+          </div>
+          <a class="btn btn--primary" href="demo.html">
+            Deschide demo-ul
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="LumiChrom — pagina principală">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">Lumi<span>Chrom</span></span>
+          </a>
+          <p>Un proiect școlar de fizică despre felul în care culoarea unei suprafețe și lumina din jur schimbă absorbția și încălzirea.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h3>Proiectul</h3>
+            <nav aria-label="Linkuri despre proiect">
+              <a href="despre.html">Despre proiect</a>
+              <a href="teorie.html">Teorie</a>
+              <a href="experiment.html">Experiment</a>
+            </nav>
+          </div>
+          <div class="footer-col">
+            <h3>Explorează</h3>
+            <nav aria-label="Linkuri către rezultate și întrebări">
+              <a href="demo.html">Demo interactiv</a>
+              <a href="rezultate.html">Rezultate</a>
+              <a href="concluzii.html">Concluzii</a>
+              <a href="intrebari.html">Întrebări frecvente</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> LumiChrom · Proiect școlar de fizică</span>
+        <span>Lumină, culoare și căldură</span>
+        <a href="#main">
+          Înapoi sus
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 19V5M6 11l6-6 6 6"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

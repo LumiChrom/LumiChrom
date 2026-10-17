@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rezultate · LumiChrom</title>
+  <meta name="description" content="Tabel și grafic cu valorile-exemplu ale experimentului LumiChrom: temperatura celor șase plăci după 30 de minute, sub trei tipuri de lumină.">
+  <meta name="theme-color" content="#fbf7f1">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      document.documentElement.classList.add("js");
+      try {
+        var saved = localStorage.getItem("lumichrom-theme");
+        document.documentElement.dataset.theme = saved === "dark" ? "dark" : "light";
+      } catch (error) {
+        document.documentElement.dataset.theme = "light";
+      }
+    })();
+  </script>
+</head>
+<body class="page-rezultate">
+  <a class="skip-link" href="#main">Sari la conținut</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="LumiChrom — pagina principală">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Lumi<span>Chrom</span></span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Meniu principal">
+        <a href="index.html">Acasă</a>
+        <a href="despre.html">Despre</a>
+        <a href="teorie.html">Teorie</a>
+        <a href="experiment.html">Experiment</a>
+        <a href="demo.html">Demo</a>
+        <a href="rezultate.html" class="is-active" aria-current="page">Rezultate</a>
+        <a href="concluzii.html">Concluzii</a>
+        <a href="intrebari.html">Întrebări</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button theme-toggle" type="button" aria-label="Comută la modul întunecat" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.6 14.2A8.6 8.6 0 0 1 9.8 3.4 8.6 8.6 0 1 0 20.6 14.2Z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </svg>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Deschide meniul" aria-controls="mainNav" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="site-main">
+    <section class="page-hero page-hero--compact">
+      <span class="chapter-mark" aria-hidden="true">05</span>
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Firimituri">
+          <a href="index.html">Acasă</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Rezultate</span>
+        </nav>
+        <div class="page-hero-inner">
+          <span class="eyebrow" data-reveal>Datele experimentului</span>
+          <h1 data-reveal style="--delay: .05s">Negru se încălzește cel mai mult, albul cel mai puțin</h1>
+          <p class="page-hero-lead" data-reveal style="--delay: .1s">
+            Tabelul și graficul arată temperatura celor șase plăci după 30 de minute.
+            Datele sunt exemple, până la înlocuirea lor cu măsurătorile reale.
+          </p>
+          <div class="page-hero-meta" data-reveal style="--delay: .15s">
+            <span class="chip"><span class="chip-dot"></span>start: 22 °C</span>
+            <span class="chip"><span class="chip-dot"></span>după 30 min</span>
+            <span class="chip"><span class="chip-dot"></span>3 lumini</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="results-title">
+      <div class="container">
+        <h2 id="results-title" class="sr-only">Tabelul și graficul rezultatelor</h2>
+
+        <div class="data-notice" data-data-notice data-reveal style="margin-bottom:23px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 11v5M12 8h.01"/>
+          </svg>
+          <div>
+            <strong>Valori ipotetice, nu măsurate</strong>
+            <p>Numerele sunt exemple pentru a arăta cum va arăta pagina. După experiment, înlocuiește-le într-un singur loc: <code>assets/js/data.js</code>. Tabelul și graficul se actualizează automat.</p>
+          </div>
+        </div>
+
+        <div class="results-toolbar" data-reveal>
+          <div class="results-tabs" role="tablist" aria-label="Alege tipul de lumină">
+            <button class="result-tab result-tab--calda" type="button" role="tab" data-result-light="calda" aria-selected="false" aria-controls="tablePanel chartPanel" tabindex="-1">
+              <span class="light-dot" aria-hidden="true"></span>
+              Lumină caldă
+            </button>
+            <button class="result-tab result-tab--normala is-active" type="button" role="tab" data-result-light="normala" aria-selected="true" aria-controls="tablePanel chartPanel" tabindex="0">
+              <span class="light-dot" aria-hidden="true"></span>
+              Lumină normală
+            </button>
+            <button class="result-tab result-tab--rece" type="button" role="tab" data-result-light="rece" aria-selected="false" aria-controls="tablePanel chartPanel" tabindex="-1">
+              <span class="light-dot" aria-hidden="true"></span>
+              Lumină rece
+            </button>
+          </div>
+          <span class="results-toolbar__note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 19V5M4 19h16"/>
+              <path d="m7 15 4-4 3 2 5-6"/>
+            </svg>
+            schimbă lumina pentru a compara
+          </span>
+        </div>
+
+        <div class="stats-grid" data-reveal style="--delay: .05s">
+          <article class="stat-card">
+            <span class="stat-label">Cea mai caldă placă</span>
+            <strong class="stat-value" data-stat="hottest">42 °C</strong>
+            <span class="stat-note" data-stat="hottest-note">Negru</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-label">Cea mai rece placă</span>
+            <strong class="stat-value" data-stat="coolest">29 °C</strong>
+            <span class="stat-note" data-stat="coolest-note">Alb</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-label">Diferența maximă</span>
+            <strong class="stat-value" data-stat="spread">13 °C</strong>
+            <span class="stat-note" data-stat="spread-note">între negru și alb</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-label">Durata măsurătorii</span>
+            <strong class="stat-value">30 min</strong>
+            <span class="stat-note">pentru fiecare test</span>
+          </article>
+        </div>
+
+        <div class="results-layout">
+          <div class="table-panel" id="tablePanel" role="tabpanel" aria-label="Tabelul rezultatelor" data-reveal>
+            <div class="panel-heading">
+              <div>
+                <h3>Tabelul temperaturilor</h3>
+                <p>Toate plăcile au pornit de la aceeași temperatură.</p>
+              </div>
+              <span class="panel-badge" data-table-light>Lumină normală · 4000 K</span>
+            </div>
+            <div class="table-wrap">
+              <table class="results-table">
+                <caption>Temperatura plăcilor colorate înainte și după 30 de minute de expunere la lumină.</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Placă</th>
+                    <th scope="col">Start</th>
+                    <th scope="col">După 30 min</th>
+                    <th scope="col">Diferență</th>
+                  </tr>
+                </thead>
+                <tbody data-results-body>
+                  <!-- Rândurile sunt generate din assets/js/data.js -->
+                </tbody>
+              </table>
+            </div>
+            <p class="table-footnote">Diferența = temperatura finală − temperatura de start. Valorile afișate sunt exemple, nu măsurători reale.</p>
+          </div>
+
+          <div class="chart-panel" id="chartPanel" role="tabpanel" aria-label="Graficul rezultatelor" data-reveal style="--delay: .08s">
+            <div class="panel-heading">
+              <div>
+                <h3>Creșterea temperaturii</h3>
+                <p>Cu cât bara este mai înaltă, cu atât placa s-a încălzit mai mult.</p>
+              </div>
+              <span class="panel-badge" data-chart-light>Lumină normală · 4000 K</span>
+            </div>
+            <div class="chart-body">
+              <div class="chart-axis" data-chart-axis aria-hidden="true">
+                <span>25</span><span>20</span><span>15</span><span>10</span><span>5</span><span>0</span>
+              </div>
+              <div class="chart-plot" data-chart-plot role="img" aria-label="Grafic cu bare al creșterii temperaturii">
+                <!-- Barele sunt generate din assets/js/data.js -->
+              </div>
+            </div>
+            <div class="chart-legend">
+              <span><i class="legend-block" aria-hidden="true"></i> creștere față de 22 °C</span>
+              <span>axa verticală: °C</span>
+            </div>
+            <p class="chart-source" data-chart-source>Creșterea temperaturii față de 22 °C, după 30 de minute.</p>
+          </div>
+        </div>
+
+        <div class="insight-grid" data-reveal>
+          <article class="insight-card">
+            <span class="insight-card__num" aria-hidden="true">01</span>
+            <div>
+              <h3>Culorile închise urcă primele</h3>
+              <p>Negrul are cea mai mare creștere, iar albastru închis îl urmează. Acestea absorb mai multă lumină.</p>
+            </div>
+          </article>
+          <article class="insight-card">
+            <span class="insight-card__num" aria-hidden="true">02</span>
+            <div>
+              <h3>Albul rămâne aproape de start</h3>
+              <p>Placa albă reflectă cea mai mare parte a luminii, deci primește mai puțină energie.</p>
+            </div>
+          </article>
+          <article class="insight-card">
+            <span class="insight-card__num" aria-hidden="true">03</span>
+            <div>
+              <h3>Lumina schimbă puțin valorile</h3>
+              <p>În exemplul de față, lumina caldă produce o creștere puțin mai mare. Diferența rămâne însă mică față de cea dintre culori.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="simple-note" data-reveal>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 11v5M12 8h.01"/>
+          </svg>
+          <span>Aceste valori sunt exemple. Concluziile reale se scriu numai după ce înlocuim datele cu măsurătorile noastre și repetăm experimentul.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--flush-top">
+      <div class="container">
+        <div class="cta-panel" data-reveal>
+          <div>
+            <span class="eyebrow">Interpretăm datele</span>
+            <h2>Ce înseamnă aceste diferențe?</h2>
+            <p>Citim rezultatele cu atenție, vedem ce surse de eroare pot apărea și ce am putea îmbunătăți.</p>
+          </div>
+          <a class="btn btn--primary" href="concluzii.html">
+            Mergi la concluzii
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="LumiChrom — pagina principală">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">Lumi<span>Chrom</span></span>
+          </a>
+          <p>Un proiect școlar de fizică despre felul în care culoarea unei suprafețe și lumina din jur schimbă absorbția și încălzirea.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h3>Proiectul</h3>
+            <nav aria-label="Linkuri despre proiect">
+              <a href="despre.html">Despre proiect</a>
+              <a href="teorie.html">Teorie</a>
+              <a href="experiment.html">Experiment</a>
+            </nav>
+          </div>
+          <div class="footer-col">
+            <h3>Explorează</h3>
+            <nav aria-label="Linkuri către rezultate și întrebări">
+              <a href="demo.html">Demo interactiv</a>
+              <a href="rezultate.html">Rezultate</a>
+              <a href="concluzii.html">Concluzii</a>
+              <a href="intrebari.html">Întrebări frecvente</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> LumiChrom · Proiect școlar de fizică</span>
+        <span>Lumină, culoare și căldură</span>
+        <a href="#main">
+          Înapoi sus
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 19V5M6 11l6-6 6 6"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/results.js" defer></script>
+</body>
+</html>
