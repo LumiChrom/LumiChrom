@@ -160,13 +160,13 @@
 
     if (description) {
       description.textContent =
-        "Alege una dintre cele trei lumini. Plăcile pornesc de la temperatura camerei și se încălzesc timp de 30 de minute.";
+        "Alege una dintre cele trei lumini. Plăcile pornesc de la temperatura camerei și se încălzesc timp de 10 3de minute.";
     }
 
     setSummary(
       "Alege o lumină pentru a începe",
       message ||
-        "Fiecare placă pornește de la 22 °C. Simularea parcurge 30 de minute în câteva secunde."
+        "Fiecare placă pornește de la 22 °C. Simularea parcurge 10 de minute în câteva secunde."
     );
 
     if (liveRegion) {
@@ -216,7 +216,7 @@
 
     setSummary(
       "Se încălzește…",
-      `Plăcile sunt expuse la ${light.label.toLowerCase()}, ${light.kelvin} K. Urmărește termometrele timp de 30 de minute simulate.`
+      `Plăcile sunt expuse la ${light.label.toLowerCase()}, ${light.kelvin} K. Urmărește termometrele timp de 10 de minute simulate.`
     );
 
     if (liveRegion) {
